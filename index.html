@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Green복지재단</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/tistory_1.css" />
+        <style>
+          * {
+              margin: 0;
+              padding: 0;
+          }
+          ul,li{
+              list-style: none;
+          }
+          a{
+              color: black;
+              text-decoration: none;
+          }
+          img{
+              border: 0;
+          }
+          .clearfix:after {
+              content: "";
+              display: block;
+              clear: both;
+          }
+
+
+
+          /*body*/
+          body{
+              width: 1200px;
+              margin: 0 auto;
+              position: relative;
+          }
+          header{
+              width: 100%;
+              height: 100px;
+              position: relative;
+          }
+          #slide_container{
+              width: 1200px;
+              height: 300px;
+              background-color: #ef80ef;
+              overflow: hidden;
+          }
+          #main_container{
+              width: 100%;
+              height: 200px;
+              background-color: #3cb149;
+          }
+          footer{
+              width: 100%;
+              height: 100px;
+              background-color: #3cb149;
+          }
+          /*body end*/
+
+
+          /*header*/
+          #logo_wrap{
+              width: 200px;
+              height: 40px;
+              margin: 30px;
+              float: left;
+          }
+          #nav_wrap{
+              width: 600px;
+              height: 40px;
+              margin-top: 58px;
+              margin-right: 20px;
+              background-color: #3cb149;
+              float: right;
+          }
+          .nav_bg_wrap{
+              width: 100%;
+              height: 130px;
+              background-color: #434748;
+              position: absolute;
+              top: 100px;
+              left: 0;
+              z-index: 100;
+              opacity: 0;
+              transition-duration: 0.5s;
+          }
+          #nav_wrap>ul{
+              width: 100%;
+          }
+          #nav_wrap>ul>li{
+              width: 25%;
+              height: 40px;
+              float: left;
+              text-align: center;
+              line-height: 40px;
+          }
+          #nav_wrap>ul>li>ul{
+              width: 150px;
+              height: 0px;
+              position: absolute;
+              z-index: 9999;
+              transition-duration: 0.5s;
+              overflow: hidden;
+          }
+          #nav_wrap>ul>li>ul>li{
+              width: 150px;
+              height: 40px;
+              text-align: center;
+              line-height: 40px;
+              cursor: pointer;
+          }
+          #nav_wrap a{
+              font-size: 20px;
+              color: white;
+              height:40px;
+          }
+          #nav_wrap>ul>li>a{
+              color: #434748;
+          }
+        </style>
+        <script src="script/jquery-3.3.1.js"></script>
+        <script src="script/main.js">
+
+        </script>
+    </head>
+
+    <body>
+        <header class="clearfix">
+            <div id="logo_wrap">
+                <img src="images/logo.png" alt="" />
+            </div>
+            <nav id="nav_wrap">
+                <div class="nav_bg_wrap"></div>
+                <ul>
+                    <li>
+                        <a href="#">재단소개</a>
+                        <ul>
+                            <li>
+                                <a href="#">설립취지</a>
+                            </li>
+                            <li>
+                                <a href="#">연혁</a>
+                            </li>
+                            <li>
+                                <a href="#">찾아오는길</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">후원하기</a>
+                        <ul>
+                            <li>
+                                <a href="#">국내후원</a>
+                            </li>
+                            <li>
+                                <a href="#">국외후원</a>
+                            </li>
+                            <li>
+                                <a href="#">맞춤후원</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">자료실</a>
+                        <ul>
+                            <li>
+                                <a href="#">서식자료실</a>
+                            </li>
+                            <li>
+                                <a href="#">사진자료실</a>
+                            </li>
+                            <li>
+                                <a href="#">후원양식</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">스토리</a>
+                        <ul>
+                            <li>
+                                <a href="#">웹진</a>
+                            </li>
+                            <li>
+                                <a href="#">보고서</a>
+                            </li>
+                            <li>
+                                <a href="#">나의 후원</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </body>
+</html>
